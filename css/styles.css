@@ -27,7 +27,6 @@ h2 { text-align: center;
      font-family: 'Ubuntu', sans-serif; }	   
 
 h3, h2 {
-  /*margin: 2em 0 0 0;*/
   color: #2e484c;
   font-family: 'Ubuntu', sans-serif;;
   /*font-size: 1.8em;*/
@@ -52,6 +51,65 @@ h3, h2 {
 	font-family: 'Rokkitt', serif;
 }
 
+
+/*-------------------------------------
+| scrolling bg
+-------------------------------------*/
+
+/*.intro .preamble, .supporting .participation, .supporting .requirements  { 
+	min-height: auto;
+	background-color: #fff;
+	padding: 10px;
+	background-image: url(../img/canvas.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+
+	background-attachment: fixed;
+
+}
+
+.intro .preamble, .supporting .participation, .supporting .requirements { 
+	
+	background-image: url(../img/canvas.png);
+}
+.intro .preamble, .supporting .participation, .supporting .requirements {
+		background-image: url(../img/canvas.png);
+}
+*/
+
+
+
+/*.supporting footer { 
+	min-height: auto;
+	background-color: #fff;
+	padding: 10px;
+	background-image: url(../img/h1-kellumlogo.png);
+	background-size: auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+*/
+	/*fixed stops it from scrolling 
+	and it determines its size of the viewport, not the parent section
+	if you remove the background attachment of fixed, each section will have its own star.*/
+/*	background-attachment: fixed;
+
+}
+
+.supporting footer  { 
+	
+	background-image: url(../img/h1-kellumlogo.png);
+}
+.supporting footer  {
+		background-image: url(../img/h1-kellumlogo.png);
+}*/
+
+
+
+/*-------------------------------------
+| Link colors
+-------------------------------------*/
 
 /* unvisited link */
 a:link {
@@ -304,6 +362,9 @@ footer { clear: both;
 	overflow: hidden;
 }
 
+/*----------------------------
+| For Sidebar right
+-----------------------------*/
 
 .page-wrapper:before {
 	content: "";
@@ -345,6 +406,8 @@ footer { clear: both;
 	.supporting footer { height:198px; }
 
 
+
+
 /*---------------
 | Sidebar Right
 ----------------*/
@@ -364,15 +427,129 @@ footer { clear: both;
 		right: 0px; 
 		top: 0px; 
 	}
+
+
+/*-----------------------------------
+| Zen Resources and Archives Desktop
+-------------------------------------*/
+/*comma separated speaking to both anchors*/
+.zen-resources a, .design-archives a {
+	display: block;
+
+	line-height: 50px;
+	background-color: #8bc2b6;
+
+	color: #fff;
+	margin-bottom: 5px;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+	background-image: url(../img/h3-background2.png);
+
 }
 
+/*comma separated speaking to both hover states*/
+.zen-resources a:hover, .design-archives a:hover
+{ /*background-color: #aeafaf; */
+  background-position: left bottom;
+  transition: all .5s;}
+
+
+
+/*-----------------------------
+| Select a Design Desktop
+-------------------------------*/
+/*this is the decendant of vs talking to both of them thats why there isnt a comma*/
+
+/*this targets the design-name links*/
+.design-selection a.design-name {
+	display: block;
+	background-color: #9eb07b;
+
+	line-height: 50px;
+	color: #fff;
+	margin-bottom: 5px;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+	background-image: url(../img/h3-background1.png);
+
+}
+
+.design-selection a.design-name:hover
+{ /*background-color: #000000;*/
+  background-position: left bottom;
+  transition: all .5s;
+  }
+
+/*this targets the floating "by"*/
+.design-selection li {
+	display: block;
+	color: #8bafa1;
+	margin-bottom: 5px;
+	font-size: 12px;
+	text-align: right;
+}
+
+
+/*this targets the designer-name link*/
+.design-selection a.designer-name {
+	color: #5b5b5b;
+}
+}
+
+/*----------------------------
+| For One Long Page
+-----------------------------*/
+/*.page-wrapper:before {
+	content: "";
+	display: block;
+	width: 709px;
+	height: 2908px;
+	background-color:#f4fbf4;
+	background-image: url(../img/bg-circles.png);
+	background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 400px auto; 
+
+	position: absolute;
+	left: -722px;
+	top: 0px;
+}
+
+.page-wrapper:after {
+	content: "";
+	display: block;
+	width: 709px;
+	height: 2908px;
+	background-color:#f4fbf4;
+	background-image: url(../img/bg-circles.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 400px auto;  
+
+
+	position: absolute;
+	right: -722px;
+	top: 0px;
+}
+
+
+.sidebar .zen-resources { height:396px; }
+
+	.supporting footer { height:64px; }
+	.supporting footer { height:198px; }*/
 
 
 /*---------------
 | One Long Page
 ----------------*/
-
-/*	.page-wrapper {
+/*
+	.page-wrapper {
 		position: relative;
 		padding: 0px; 
 	}
@@ -388,7 +565,9 @@ footer { clear: both;
 		top: 0px; 
 	}
 }
+
 */
+
 
 
 
@@ -430,15 +609,15 @@ nav li { list-style-type: none; display: inline;}
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: none;
-	background-image: url(../img/h3-background2.png);
+	/*background-image: url(../img/h3-background2.png);*/
 
 }
 
 /*comma separated speaking to both hover states*/
 .zen-resources a:hover, .design-archives a:hover
 { /*background-color: #aeafaf; */
-  background-position: left bottom;
-  transition: all .5s;}
+ /* background-position: left bottom;
+  transition: all .5s;*/}
 
 
 /*-----------------
@@ -459,14 +638,14 @@ nav li { list-style-type: none; display: inline;}
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: none;
-	background-image: url(../img/h3-background1.png);
+	/*background-image: url(../img/h3-background1.png);*/
 
 }
 
 .design-selection a.design-name:hover
 { /*background-color: #000000;*/
-  background-position: left bottom;
-  transition: all .5s;
+ /* background-position: left bottom;
+  transition: all .5s;*/
   }
 
 /*this targets the floating "by"*/
