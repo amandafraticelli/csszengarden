@@ -37,7 +37,6 @@ h3, h2 {
 
 
 
-
 /*
 h3 { font-family: 'Open Sans Condensed', sans-serif;
      font-size: 30px;}*/
@@ -635,7 +634,7 @@ h3:hover {
 -------------------------------------------*/
 
 /*odd or even*/
-/*p:nth-of-type(odd) {*/
+p:nth-of-type(odd) {
 	/*background color: yellow;*/
 }
 
@@ -655,9 +654,8 @@ h3:hover {
 }
 
 .supporting .requirements a:last-child {
-	background-color: white;
+	background-color: white ;
 }
-
 
 
 
@@ -672,12 +670,15 @@ h3:hover {
 
 
 .intro .summary a:nth-of-type(2n+1) {
-		background-color: #b9dfe6;
+	background-color: #8bc2b6;
 }
 
+
 .intro .summary a:nth-of-type(2) {
-	background-color: #b9dfe6;
+	background-color: #8bc2b6;
 }
+
+
 /*------------------------------------------------------------------------------------
 | Before & After (helps because the HTML is untouchable) you can add divs, images etc
 -------------------------------------------------------------------------------------*/
