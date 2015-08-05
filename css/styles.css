@@ -37,6 +37,7 @@ h3, h2 {
 
 
 
+
 /*
 h3 { font-family: 'Open Sans Condensed', sans-serif;
      font-size: 30px;}*/
@@ -636,7 +637,7 @@ h3:hover {
 /*odd or even*/
 /*p:nth-of-type(odd) {*/
 	/*background color: yellow;*/
-/*}*/
+}
 
 /* nth with multiplier of works like
   (3n+1)
