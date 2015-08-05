@@ -156,7 +156,7 @@ footer { clear: both;
 
 	h1 {
 
-	background-image: url(..//img/h1-kellum_1.png),
+	background-image: url(..//img/h1-kellum1.png),
 	url(..//img/h1-kellum_logo.png);
 	background-repeat: no-repeat, no-repeat;
 	background-position: bottom, top;
@@ -200,7 +200,7 @@ footer { clear: both;
 	----------------*/
 
 	body {
-		   background-image: url(../img/bg-circles_2.png);
+		   background-image: url(../img/bg-circles2.png);
            background-repeat: repeat-x ;
            background-position: top center;
            background-size: 436px;
@@ -212,7 +212,7 @@ footer { clear: both;
 	----------------*/
 	h1 {
 
-	background-image: url(..//img/h1-kellum_02.png);
+	background-image: url(..//img/h1-kellum02.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	/*background-size: 100px auto 100px auto;*/
@@ -283,7 +283,7 @@ footer { clear: both;
 	----------------*/
 	h1 {
 
-	background-image: url(..//img/h1-kellum_03.png);
+	background-image: url(..//img/h1-kellum03.png);
 	
 	background-repeat: no-repeat;
 	background-position: center;
@@ -430,7 +430,7 @@ nav li { list-style-type: none; display: inline;}
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: none;
-	background-image: url(../img/h3-background_2.png);
+	background-image: url(../img/h3-background2.png);
 
 }
 
@@ -459,7 +459,7 @@ nav li { list-style-type: none; display: inline;}
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: none;
-	background-image: url(../img/h3-background_1.png);
+	background-image: url(../img/h3-background1.png);
 
 }
 
