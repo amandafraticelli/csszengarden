@@ -564,6 +564,42 @@ p:nth-of-type(odd) {
 	/*background-color: pink;*/
 }
 
+
+
+.supporting .requirements a:nth-of-type(2n+1) {
+	background-color: white;
+}
+
+/*targets a specific child*/
+.supporting .requirements a:nth-of-type(2) {
+	background-color: white;
+}
+
+.supporting .requirements a:last-child {
+	background-color: white ;
+}
+
+
+
+
+.supporting .participation a:nth-of-type(2n+1) {
+	background-color: white;
+}
+
+.supporting .participation a:nth-of-type(2) {
+	background-color: white;
+}
+
+
+.intro .summary a:nth-of-type(2n+1) {
+	background-color: #8bc2b6;
+}
+
+
+.intro .summary a:nth-of-type(2) {
+	background-color: #8bc2b6;
+}
+
 /*------------------------------------------------------------------------------------
 | Before & After (helps because the HTML is untouchable) you can add divs, images etc
 -------------------------------------------------------------------------------------*/
