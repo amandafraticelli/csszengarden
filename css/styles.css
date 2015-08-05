@@ -4,6 +4,7 @@
 /*@import url(http://fonts.googleapis.com/css?family=Lobster);*/
 @import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic);*/
 
 /*-------------------------------------
 | Resets
@@ -27,13 +28,18 @@ h2 { text-align: center;
      font-family: 'Ubuntu', sans-serif; }	   
 
 h3, h2 {
-  /*margin: 2em 0 0 0;*/
   color: #2e484c;
   font-family: 'Ubuntu', sans-serif;;
-  /*font-size: 1.8em;*/
   font-weight: normal;
   text-transform: uppercase;
+  font-size: 25px;
 }
+
+
+
+/*
+h3 { font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 30px;}*/
 
 /*this is what makes a site fluid*/
 
@@ -52,6 +58,9 @@ h3, h2 {
 	font-family: 'Rokkitt', serif;
 }
 
+/*----------
+|Links
+----------*/
 
 /* unvisited link */
 a:link {
@@ -96,7 +105,7 @@ footer { clear: both;
 | .intro children
 -------------------------------------*/
 .intro header 		{ background-color: #c0e2bb; padding: 10px;
-    				  background-image: url(../img/dotted.png);
+    				  background-image: url(../img/dotted1.png);
     				  background-repeat: no-repeat;
     				  background-size: 1230px; }
 .intro .summary 	{ background-color: #f4fbf4; padding: 10px; }
@@ -187,9 +196,9 @@ footer { clear: both;
 
 
 
-/*---------------
+/*---------------------------------------
 | Breakpoint 2
-----------------*/
+----------------------------------------*/
 
 @media screen and (min-width:500px) {
 
@@ -253,11 +262,15 @@ footer { clear: both;
 
 .sidebar .zen-resources { height:366px; }
 
+
+
+
+
 }
 
-/*---------------
+/*---------------------------------------
 | Breakpoint 3
-----------------*/
+----------------------------------------*/
 
 
 @media screen and (min-width:900px) {
@@ -304,6 +317,25 @@ footer { clear: both;
 	overflow: hidden;
 }
 
+footer a::before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  overflow: visible;
+  font-size: 36px;
+  text-indent: 0;
+
+  /* icomoon.io defaults */
+  font-family: 'verdemoderna';
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
 
 .page-wrapper:before {
 	content: "";
@@ -339,10 +371,10 @@ footer { clear: both;
 }
 
 
-.sidebar .zen-resources { height:915px; }
+.sidebar .zen-resources { height:922px; }
 
 	.supporting footer { height:64px; }
-	.supporting footer { height:198px; }
+	.supporting footer { height:104px;}
 
 
 /*---------------
@@ -364,6 +396,65 @@ footer { clear: both;
 		right: 0px; 
 		top: 0px; 
 	}
+
+/*--------------------------
+| Zen Resources and Archives
+----------------------------*/
+/*comma separated speaking to both anchors*/
+.zen-resources a, .design-archives a {
+	display: block;
+
+	line-height: 50px;
+	background-color: #8bc2b6;
+
+	color: #fff;
+	margin-bottom: 5px;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+	background-image: url(../img/h3-background2.png);
+
+}
+
+/*comma separated speaking to both hover states*/
+.zen-resources a:hover, .design-archives a:hover
+{ /*background-color: #aeafaf; */
+  background-position: left bottom;
+  transition: all .5s;}
+
+
+/*-----------------
+| Select a Design
+-------------------*/
+/*this is the decendant of vs talking to both of them thats why there isnt a comma*/
+
+/*this targets the design-name links*/
+
+.design-selection a.design-name {
+	display: block;
+	background-color: #9eb07b;
+
+	line-height: 50px;
+	color: #fff;
+	margin-bottom: 5px;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+	background-image: url(../img/h3-background1.png);
+
+}
+
+.design-selection a.design-name:hover
+{ /*background-color: #000000;*/
+  background-position: left bottom;
+  transition: all .5s;
+  }
+
+
 }
 
 
@@ -388,8 +479,8 @@ footer { clear: both;
 		top: 0px; 
 	}
 }
-*/
 
+*/
 
 
 /*------------
@@ -430,15 +521,15 @@ nav li { list-style-type: none; display: inline;}
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: none;
-	background-image: url(../img/h3-background2.png);
+	/*background-image: url(../img/h3-background2.png);*/
 
 }
 
 /*comma separated speaking to both hover states*/
 .zen-resources a:hover, .design-archives a:hover
-{ /*background-color: #aeafaf; */
-  background-position: left bottom;
-  transition: all .5s;}
+{ background-color: #aeafaf; 
+  /*background-position: left bottom;
+  transition: all .5s;*/}
 
 
 /*-----------------
@@ -447,6 +538,8 @@ nav li { list-style-type: none; display: inline;}
 /*this is the decendant of vs talking to both of them thats why there isnt a comma*/
 
 /*this targets the design-name links*/
+
+
 .design-selection a.design-name {
 	display: block;
 	background-color: #9eb07b;
@@ -459,14 +552,14 @@ nav li { list-style-type: none; display: inline;}
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: none;
-	background-image: url(../img/h3-background1.png);
+	/*background-image: url(../img/h3-background1.png);*/
 
 }
 
 .design-selection a.design-name:hover
 { /*background-color: #000000;*/
-  background-position: left bottom;
-  transition: all .5s;
+  /*background-position: left bottom;
+  transition: all .5s;*/
   }
 
 /*this targets the floating "by"*/
@@ -541,9 +634,9 @@ h3:hover {
 -------------------------------------------*/
 
 /*odd or even*/
-p:nth-of-type(odd) {
+/*p:nth-of-type(odd) {*/
 	/*background color: yellow;*/
-}
+/*}*/
 
 /* nth with multiplier of works like
   (3n+1)
@@ -551,19 +644,39 @@ p:nth-of-type(odd) {
   3 times 1 is 3 plus one equals 4 so the 4th one will be whatever you specify*/
 
 /*targets patterns*/
-.supporting .requirements p:nth-of-type(2n+1) {
-	/*background-color: orange;*/
+.supporting .requirements a:nth-of-type(2n+1) {
+	background-color: white;
 }
 
 /*targets a specific child*/
-.supporting .requirements p:nth-of-type(2) {
-	/*background-color: lime;*/
+.supporting .requirements a:nth-of-type(2) {
+	background-color: white;
 }
 
-.supporting .requirements p:last-child {
-	/*background-color: pink;*/
+.supporting .requirements a:last-child {
+	background-color: white;
 }
 
+
+
+
+
+.supporting .participation a:nth-of-type(2n+1) {
+	background-color: white;
+}
+
+.supporting .participation a:nth-of-type(2) {
+	background-color: white;
+}
+
+
+.intro .summary a:nth-of-type(2n+1) {
+		background-color: #b9dfe6;
+}
+
+.intro .summary a:nth-of-type(2) {
+	background-color: #b9dfe6;
+}
 /*------------------------------------------------------------------------------------
 | Before & After (helps because the HTML is untouchable) you can add divs, images etc
 -------------------------------------------------------------------------------------*/
